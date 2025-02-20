@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add these styles for the video background */
+iframe {
+  pointer-events: none;
+}
+
+@media (max-aspect-ratio: 16 / 9) {
+  #youtube-player {
+    width: 177.77vh;
+    height: 100vh;
+  }
+}
+
+@media (min-aspect-ratio: 16 / 9) {
+  #youtube-player {
+    width: 100vw;
+    height: 56.25vw;
+  }
+}
+
